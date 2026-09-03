@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashley Arceneaux — Lead / Senior Technical Recruiter</title>
-<meta name="description" content="Ashley Arceneaux — Lead & Senior Technical Recruiter with 9+ years placing technical, executive, and early-career talent at FICO, Concentra, and beyond. Open to new opportunities.">
+<title>Ashley Arceneaux — Lead &amp; Senior Talent Acquisition</title>
+<meta name="description" content="Ashley Arceneaux — Lead &amp; Senior Technical Recruiter placing executive, technical, and early-career talent at FICO, Concentra, and Kforce. Open to new opportunities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -75,7 +75,7 @@
     color:var(--ink-soft); margin-bottom:20px;
   }
   .eyebrow::before{content:''; width:8px; height:8px; border-radius:50%; background:var(--sage); display:inline-block;}
-  .hero h1{font-size:clamp(2.6rem, 5vw, 4.2rem); line-height:1.02; margin-bottom:22px;}
+  .hero h1{font-size:clamp(2.1rem, 4vw, 3.4rem); line-height:1.12; margin-bottom:22px;}
   .hero h1 em{font-style:normal; color:var(--amber);}
   .hero p.lead{font-size:1.15rem; color:var(--ink-soft); max-width:46ch; margin-bottom:32px;}
   .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-top:8px;}
@@ -88,8 +88,6 @@
   .btn-primary:hover{transform:translateY(-2px);}
   .btn-ghost{border:1.5px solid var(--line); padding:14px 28px; border-radius:100px; font-weight:600; font-size:0.95rem; transition: background .2s;}
   .btn-ghost:hover{background:var(--panel);}
-
-  /* Photo panel in hero (unused now, kept for about section only) */
 
   /* Signature hero visual: organization orbit chart */
   .org-orbit{position:relative;}
@@ -176,7 +174,26 @@
   .spec-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
   .spec-card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:32px; transition:border-color .2s, transform .2s;}
   .spec-card:hover{border-color:var(--amber); transform:translateY(-4px);}
-  .spec-icon{width:44px; height:44px; border-radius:12px; background:rgba(232,93,138,0.14); display:flex; align-items:center; justify-content:center; margin-bottom:18px; font-size:1.3rem;}
+  .spec-card{position:relative; overflow:hidden;}
+  .spec-card::after{
+    content:'✦'; position:absolute; top:16px; right:18px; font-size:14px; color:var(--amber);
+    opacity:0; animation:twinkle 3.2s ease-in-out infinite;
+  }
+  .spec-grid .spec-card:nth-child(1)::after, .spec-grid .spec-card:nth-child(1) .spec-icon{ animation-delay:0s; }
+  .spec-grid .spec-card:nth-child(2)::after, .spec-grid .spec-card:nth-child(2) .spec-icon{ animation-delay:0.5s; }
+  .spec-grid .spec-card:nth-child(3)::after, .spec-grid .spec-card:nth-child(3) .spec-icon{ animation-delay:1s; }
+  .spec-grid .spec-card:nth-child(4)::after, .spec-grid .spec-card:nth-child(4) .spec-icon{ animation-delay:1.5s; }
+  .spec-grid .spec-card:nth-child(5)::after, .spec-grid .spec-card:nth-child(5) .spec-icon{ animation-delay:2s; }
+  .spec-grid .spec-card:nth-child(6)::after, .spec-grid .spec-card:nth-child(6) .spec-icon{ animation-delay:2.5s; }
+  @keyframes twinkle{
+    0%,100%{opacity:0; transform:scale(0.5) rotate(0deg);}
+    50%{opacity:1; transform:scale(1.1) rotate(20deg);}
+  }
+  .spec-icon{width:44px; height:44px; border-radius:12px; background:rgba(232,93,138,0.14); display:flex; align-items:center; justify-content:center; margin-bottom:18px; font-size:1.3rem; animation:iconGlow 3.2s ease-in-out infinite;}
+  @keyframes iconGlow{
+    0%,100%{box-shadow:0 0 0 rgba(232,93,138,0);}
+    50%{box-shadow:0 0 16px rgba(232,93,138,0.5);}
+  }
   .spec-card h3{font-size:1.15rem; margin-bottom:10px;}
   .spec-card p{color:var(--ink-soft); font-size:0.95rem;}
   @media (max-width:820px){ .spec-grid{grid-template-columns:1fr;} }
@@ -300,7 +317,7 @@
   <div class="wrap">
     <div>
       <div class="eyebrow">Open to Lead &amp; Senior Talent Acquisition roles</div>
-      <h1>I find the people<br> who make <em>teams</em><br>impossible to beat.</h1>
+      <h1>I find the hard-to-find talent<br>that turns great teams into<br><em>unstoppable</em> ones.</h1>
       <div class="role-badges">
         <span class="role-badge">Lead Technical Recruiter</span>
         <span class="role-badge">Senior Technical Recruiter</span>
@@ -416,7 +433,7 @@
     </div>
     <div class="about-body">
       <h3 class="about-tagline">People First. Purpose Driven.<br>Talent That Makes an Impact.</h3>
-      <p class="about-intro">Recruiting is personal. I believe the best hires happen when you take the time to understand the person behind the resume and the people behind the business. I connect exceptional talent with meaningful opportunities while helping companies build teams that are positioned to grow, innovate, and succeed. Whether you are looking for your next great hire or your next great opportunity, let's connect.</p>
+      <p class="about-intro">Recruiting is personal. The best hires happen when you understand the person behind the résumé, not just the résumé itself. I connect exceptional talent with meaningful opportunities — and help companies build teams positioned to grow, innovate, and succeed.</p>
     </div>
   </div>
 </section>
@@ -443,8 +460,8 @@
           <div class="timeline-role">Lead Corporate Technical Recruiter</div>
           <div class="timeline-company">Concentra</div>
           <ul>
-            <li>Sole recruiter to build the technical recruiting function from the ground up — Executive, Software Engineering, Cloud, Infrastructure, Cybersecurity, Data, and Product roles.</li>
-            <li>Owned full-cycle recruiting, offer strategy, and negotiations across contract and permanent hires.</li>
+            <li>Built the technical recruiting function from the ground up across Executive, Software Engineering, Cloud, Infrastructure, Cybersecurity, Data, and Product, driving 85%+ offer acceptance through strategic candidate engagement.</li>
+            <li>Owned full-cycle recruiting, offer strategy, and negotiations, maintaining 50%+ submission-to-interview conversion while supporting critical technical workforce growth.</li>
           </ul>
         </div>
       </div>
@@ -453,18 +470,8 @@
           <div class="timeline-role">Senior Technical Recruiter</div>
           <div class="timeline-company">Kforce</div>
           <ul>
-            <li>Led strategic recruiting for Executive, Software Engineering, Cloud, DevOps, Infrastructure, Cyber Security, Data, and Analytics talent across client accounts.</li>
-            <li>Partnered with senior hiring leaders on talent strategy, compensation benchmarking, candidate assessment, and market insights to accelerate hiring and consistently exceed recruiting goals.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div>
-          <div class="timeline-role">Lead Technical Recruiter &amp; Campus Recruiter</div>
-          <div class="timeline-company">Alliantgroup</div>
-          <ul>
-            <li>Led national campus recruiting initiatives spanning university partnerships, career fairs, and employer branding.</li>
-            <li>Coordinated sourcing, interviews, and hiring logistics for internship and entry-level programs.</li>
+            <li>Successfully filled Executive Leadership, Software Engineering, Cloud/DevOps, Infrastructure, Cybersecurity, Data/Analytics, Procurement, HR, Finance, and other corporate talent roles across enterprise client accounts, improving submission-to-interview conversion by 60% through targeted sourcing and quality candidate selection.</li>
+            <li>Advised hiring managers on compensation benchmarking, market intelligence, and candidate evaluation, consistently exceeding hiring goals and delivering high-quality talent against business needs.</li>
           </ul>
         </div>
       </div>
@@ -494,38 +501,38 @@
     <div class="section-head">
       <div class="eyebrow">Core strengths</div>
       <h2>What I bring to a hiring team</h2>
-      <p>Mapped to what hiring leaders actually look for in their next senior recruiter — backed by results, not just buzzwords.</p>
+      <p>What top companies look for in their next great recruiter — backed by real numbers, not buzzwords.</p>
     </div>
     <div class="spec-grid">
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>Technical fluency</h3>
-        <p>Fluent enough in AI/ML, Cloud, DevOps, and cybersecurity to evaluate candidates credibly — not just keyword-match resumes.</p>
+        <p>Fluent in AI/ML, Cloud, DevOps, and Cybersecurity — sharp enough to evaluate candidates like an engineer would, not just keyword-match resumes.</p>
       </div>
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>Executive &amp; stakeholder partnership</h3>
-        <p>Trusted recruiting partner to a Chief Analytics Officer — comfortable briefing leadership and pushing back on unrealistic asks.</p>
+        <p>A trusted strategic partner to a Chief Analytics Officer — confident briefing leadership, influencing hiring strategy, and pushing back on unrealistic asks.</p>
       </div>
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>Passive sourcing &amp; market intelligence</h3>
-        <p>Building pipelines for talent that isn't actively looking, using market mapping, comp benchmarking, and AI-powered sourcing.</p>
+        <p>Consistently wins the candidates who aren't applying anywhere — through market mapping, comp benchmarking, and AI-powered sourcing.</p>
       </div>
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>High-volume, full-cycle ownership</h3>
-        <p>Managed 20+ concurrent high-priority searches end-to-end — sourcing through offer negotiation and close.</p>
+        <p>Ran 20+ concurrent high-priority searches simultaneously without dropping quality — sourcing through offer negotiation and close.</p>
       </div>
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>Interview calibration &amp; process design</h3>
-        <p>Coached hiring managers on structured interviews and candidate assessment to reduce bias and improve signal.</p>
+        <p>Builds the scorecards and coaches the panels — reducing bias, sharpening signal, and making hiring decisions faster and more confident.</p>
       </div>
       <div class="spec-card">
         <div class="spec-icon">◆</div>
         <h3>Recruiting analytics &amp; data storytelling</h3>
-        <p>Track pipeline health and hiring metrics — time-to-fill, offer acceptance, retention — and turn them into decisions leadership acts on.</p>
+        <p>Turns pipeline health, time-to-fill, and retention data into a story leadership can act on — not just a dashboard nobody reads.</p>
       </div>
     </div>
   </div>
@@ -700,8 +707,8 @@
 
 <div class="wrap">
   <div class="contact-band" id="contact">
-    <h2>Let's talk about your next hire — or your next great recruiter.</h2>
-    <p>I'm actively exploring Lead and Senior Technical Recruiter opportunities. If your team needs someone who can move fast without cutting corners, let's connect.</p>
+    <h2>Let's build something great together.</h2>
+    <p>Open to Lead and Senior Talent Acquisition opportunities — if your team needs someone who moves fast without cutting corners, let's connect.</p>
     <a href="mailto:arceneauxsymone@gmail.com" class="btn-primary">Email Ashley</a>
     <a href="Ashley-Arceneaux-Resume.pdf" class="btn-ghost" style="background:transparent; border-color:rgba(255,255,255,0.4); color:var(--paper); margin-left:12px;" download>Download Resume</a>
     <div class="contact-details">
